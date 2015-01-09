@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app ng-controller='shop'>
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controler.js"></script>
+
+    <title>{{greeting.text}}</title>
+</head>
+<body>
+<h1>{{greeting.text}}</h1>
+<table>
+    <thead>
+    <td>title</td>
+    <td>tedad</td>
+    <td>price</td>
+    </thead>
+<div ng-repeat="item in items">
+    <tr>
+        <td>
+        TITLE : {{item.title}}
+        </td>
+    </tr>
+</div>
+</table>
+</body>
+</html>
